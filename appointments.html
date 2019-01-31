@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Appointments</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>If you want to schedule an appointment, please fill out the following!!</h1>
+      <div>
+        <form id="formOne">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input id="date" class="form-control" type="date">
+          </div>
+          <div class="form-group">
+            <label for="nature">Nature of your Appointment (Ex. "For an...")</label>
+            <input id="nature" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="start">Start Time</label>
+            <input id="start" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="end">End Time</label>
+            <input id="end" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn">Book my Appointment</button>
+        </form>
+      </div>
+
+      <div id="story">
+        <h1>Your Appointment</h1>
+        <p>
+          Congradulations, <span class="name"></span>! Your appointment has been booked for <span class="date"></span>. You will be there for an <span class="nature"></span>, and will be there from <span class="starttime"></span> to <span class="endtime"></span>. Looking forward to seeing you there!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
